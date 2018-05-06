@@ -298,6 +298,14 @@
 			"notests": true
 		},
 		{
+			"importpath": "github.com/ifo/gozulipbot",
+			"repository": "https://github.com/ifo/gozulipbot",
+			"vcs": "git",
+			"revision": "c4da7e4e233a2ca8c47270452e66ab44851342ed",
+			"branch": "master",
+			"notests": true
+		},
+		{
 			"importpath": "github.com/jpillora/backoff",
 			"repository": "https://github.com/jpillora/backoff",
 			"vcs": "git",

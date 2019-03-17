@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/42wim/matterbridge/bridge"
-	"github.com/42wim/matterbridge/bridge/config"
+	"github.com/vvoland/matterbridge/bridge"
+	"github.com/vvoland/matterbridge/bridge/config"
 )
 
 // handleEventFailure handles failures and reconnects bridges.

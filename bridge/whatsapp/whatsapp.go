@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/42wim/matterbridge/bridge"
-	"github.com/42wim/matterbridge/bridge/config"
+	"github.com/vvoland/matterbridge/bridge"
+	"github.com/vvoland/matterbridge/bridge/config"
 
 	"github.com/matterbridge/go-whatsapp"
 
@@ -56,7 +56,7 @@ func New(cfg *bridge.Config) bridge.Bridger {
 }
 
 // Connect to WhatsApp. Required implementation of the Bridger interface
-// https://github.com/42wim/matterbridge/blob/2cfd880cdb0df29771bf8f31df8d990ab897889d/bridge/bridge.go#L11-L16
+// https://github.com/vvoland/matterbridge/blob/2cfd880cdb0df29771bf8f31df8d990ab897889d/bridge/bridge.go#L11-L16
 func (b *Bwhatsapp) Connect() error {
 	b.RLock() // TODO do we need locking for Whatsapp?
 	defer b.RUnlock()
@@ -177,9 +177,9 @@ func (b *Bwhatsapp) Login() error {
 }
 
 // Disconnect is called while reconnecting to the bridge
-// TODO 42wim Documentation would be helpful on when reconnects happen and what should be done in this function
+// TODO vvoland Documentation would be helpful on when reconnects happen and what should be done in this function
 // Required implementation of the Bridger interface
-// https://github.com/42wim/matterbridge/blob/2cfd880cdb0df29771bf8f31df8d990ab897889d/bridge/bridge.go#L11-L16
+// https://github.com/vvoland/matterbridge/blob/2cfd880cdb0df29771bf8f31df8d990ab897889d/bridge/bridge.go#L11-L16
 func (b *Bwhatsapp) Disconnect() error {
 	// We could Logout, but that would close the session completely and would require a new QR code scan
 	// https://github.com/Rhymen/go-whatsapp/blob/c31092027237441cffba1b9cb148eadf7c83c3d2/session.go#L377-L381
@@ -192,7 +192,7 @@ func isGroupJid(identifier string) bool {
 
 // JoinChannel Join a WhatsApp group specified in gateway config as channel='number-id@g.us' or channel='Channel name'
 // Required implementation of the Bridger interface
-// https://github.com/42wim/matterbridge/blob/2cfd880cdb0df29771bf8f31df8d990ab897889d/bridge/bridge.go#L11-L16
+// https://github.com/vvoland/matterbridge/blob/2cfd880cdb0df29771bf8f31df8d990ab897889d/bridge/bridge.go#L11-L16
 func (b *Bwhatsapp) JoinChannel(channel config.ChannelInfo) error {
 	byJid := isGroupJid(channel.Name)
 
@@ -239,7 +239,7 @@ func (b *Bwhatsapp) JoinChannel(channel config.ChannelInfo) error {
 
 // Send a message from the bridge to WhatsApp
 // Required implementation of the Bridger interface
-// https://github.com/42wim/matterbridge/blob/2cfd880cdb0df29771bf8f31df8d990ab897889d/bridge/bridge.go#L11-L16
+// https://github.com/vvoland/matterbridge/blob/2cfd880cdb0df29771bf8f31df8d990ab897889d/bridge/bridge.go#L11-L16
 func (b *Bwhatsapp) Send(msg config.Message) (string, error) {
 	b.Log.Debugf("=> Receiving %#v", msg)
 
@@ -249,7 +249,7 @@ func (b *Bwhatsapp) Send(msg config.Message) (string, error) {
 			// No message ID in case action is executed on a message sent before the bridge was started
 			// and then the bridge cache doesn't have this message ID mapped
 
-			// TODO 42wim Doesn't the app get clogged with a ton of IDs after some time of running?
+			// TODO vvoland Doesn't the app get clogged with a ton of IDs after some time of running?
 			// WhatsApp allows to set any ID so in that case we could use external IDs and don't do mapping
 			// but external IDs are not set
 			return "", nil

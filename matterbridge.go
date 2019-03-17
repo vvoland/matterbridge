@@ -6,9 +6,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/42wim/matterbridge/bridge/config"
-	"github.com/42wim/matterbridge/gateway"
-	"github.com/42wim/matterbridge/gateway/bridgemap"
+	"github.com/vvoland/matterbridge/bridge/config"
+	"github.com/vvoland/matterbridge/gateway"
+	"github.com/vvoland/matterbridge/gateway/bridgemap"
 	"github.com/google/gops/agent"
 	prefixed "github.com/matterbridge/logrus-prefixed-formatter"
 	"github.com/sirupsen/logrus"

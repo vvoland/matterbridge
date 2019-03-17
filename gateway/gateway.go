@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/42wim/matterbridge/bridge"
-	"github.com/42wim/matterbridge/bridge/config"
+	"github.com/vvoland/matterbridge/bridge"
+	"github.com/vvoland/matterbridge/bridge/config"
 	"github.com/d5/tengo/script"
 	lru "github.com/hashicorp/golang-lru"
 	"github.com/peterhellberg/emojilib"

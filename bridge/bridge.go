@@ -4,7 +4,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/42wim/matterbridge/bridge/config"
+	"github.com/vvoland/matterbridge/bridge/config"
 	"github.com/sirupsen/logrus"
 )
 

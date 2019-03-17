@@ -1,8 +1,8 @@
 package gateway
 
 import (
-	"github.com/42wim/matterbridge/bridge"
-	"github.com/42wim/matterbridge/bridge/config"
+	"github.com/vvoland/matterbridge/bridge"
+	"github.com/vvoland/matterbridge/bridge/config"
 	"github.com/stretchr/testify/assert"
 
 	"testing"

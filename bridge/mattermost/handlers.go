@@ -1,9 +1,9 @@
 package bmattermost
 
 import (
-	"github.com/42wim/matterbridge/bridge/config"
-	"github.com/42wim/matterbridge/bridge/helper"
-	"github.com/42wim/matterbridge/matterclient"
+	"github.com/vvoland/matterbridge/bridge/config"
+	"github.com/vvoland/matterbridge/bridge/helper"
+	"github.com/vvoland/matterbridge/matterclient"
 	"github.com/mattermost/mattermost-server/model"
 )
 

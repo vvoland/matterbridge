@@ -1,21 +1,21 @@
 package bridgemap
 
 import (
-	"github.com/42wim/matterbridge/bridge"
-	"github.com/42wim/matterbridge/bridge/api"
-	"github.com/42wim/matterbridge/bridge/discord"
-	"github.com/42wim/matterbridge/bridge/gitter"
-	"github.com/42wim/matterbridge/bridge/irc"
-	"github.com/42wim/matterbridge/bridge/matrix"
-	"github.com/42wim/matterbridge/bridge/mattermost"
-	"github.com/42wim/matterbridge/bridge/rocketchat"
-	"github.com/42wim/matterbridge/bridge/slack"
-	"github.com/42wim/matterbridge/bridge/sshchat"
-	"github.com/42wim/matterbridge/bridge/steam"
-	"github.com/42wim/matterbridge/bridge/telegram"
-	"github.com/42wim/matterbridge/bridge/whatsapp"
-	"github.com/42wim/matterbridge/bridge/xmpp"
-	"github.com/42wim/matterbridge/bridge/zulip"
+	"github.com/vvoland/matterbridge/bridge"
+	"github.com/vvoland/matterbridge/bridge/api"
+	"github.com/vvoland/matterbridge/bridge/discord"
+	"github.com/vvoland/matterbridge/bridge/gitter"
+	"github.com/vvoland/matterbridge/bridge/irc"
+	"github.com/vvoland/matterbridge/bridge/matrix"
+	"github.com/vvoland/matterbridge/bridge/mattermost"
+	"github.com/vvoland/matterbridge/bridge/rocketchat"
+	"github.com/vvoland/matterbridge/bridge/slack"
+	"github.com/vvoland/matterbridge/bridge/sshchat"
+	"github.com/vvoland/matterbridge/bridge/steam"
+	"github.com/vvoland/matterbridge/bridge/telegram"
+	"github.com/vvoland/matterbridge/bridge/whatsapp"
+	"github.com/vvoland/matterbridge/bridge/xmpp"
+	"github.com/vvoland/matterbridge/bridge/zulip"
 )
 
 var FullMap = map[string]bridge.Factory{

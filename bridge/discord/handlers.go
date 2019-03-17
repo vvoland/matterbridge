@@ -1,7 +1,7 @@
 package bdiscord
 
 import (
-	"github.com/42wim/matterbridge/bridge/config"
+	"github.com/vvoland/matterbridge/bridge/config"
 	"github.com/bwmarrin/discordgo"
 )
 

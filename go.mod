@@ -1,4 +1,4 @@
-module github.com/42wim/matterbridge
+module github.com/vvoland/matterbridge
 
 require (
 	github.com/42wim/go-gitter v0.0.0-20170828205020-017310c2d557

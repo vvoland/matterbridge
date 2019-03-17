@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/42wim/matterbridge/bridge/config"
-	"github.com/42wim/matterbridge/bridge/helper"
+	"github.com/vvoland/matterbridge/bridge/config"
+	"github.com/vvoland/matterbridge/bridge/helper"
 	"github.com/dfordsoft/golib/ic"
 	"github.com/lrstanley/girc"
 	"github.com/paulrosania/go-charset/charset"

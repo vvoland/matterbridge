@@ -470,9 +470,7 @@ func (b *Bslack) uploadFile(msg *config.Message, channelID string) {
 
 func (b *Bslack) prepareMessageOptions(msg *config.Message) []slack.MsgOption {
 	params := slack.NewPostMessageParameters()
-	if b.GetBool(useNickPrefixConfig) {
-		params.AsUser = true
-	}
+	params.AsUser = true
 	params.Username = msg.Username
 	params.LinkNames = 1 // replace mentions
 	params.IconURL = config.GetIconURL(msg, b.GetString(iconURLConfig))
